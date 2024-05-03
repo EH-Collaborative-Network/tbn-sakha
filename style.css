@@ -10,11 +10,13 @@
     --main-bg-color: black;
     --color:white;
     --space: 30px;
+    --font-size-small: 16px;
     --font-size-body: 20px;
     --font-size-large: 40px;
     --font-size-larger: 64px;
     --left-column: 410px;
     --space-large:87px;
+    --light-bg-color: rgb(25, 24, 24);
 }
 
 #canvas canvas{
@@ -99,7 +101,20 @@ header #banner{
     left:var(--space-large);
     top:var(--space);
 }
-
+/* Language */
+#language-toggle{
+    background-color: var(--main-bg-color);
+    padding: 7px;
+    font-size:var(--font-size-small);
+    position:fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    cursor: pointer;
+}
+#language-toggle:hover{
+    background-color: var(--light-bg-color);
+}
 /* Introduction */
 
 header #intro{
@@ -164,7 +179,7 @@ footer a{
 }
 footer a:hover{
     cursor: pointer;
-    background-color: rgb(25, 24, 24);
+    background-color: var(--light-bg-color);
 }
 /*main*/
 
@@ -267,7 +282,7 @@ main{
     border: none;
 }
 #back-to-home:hover button{
-    background:  rgb(25, 24, 24);
+    background:  var(--light-bg-color);
 }
 
 
