@@ -104,7 +104,7 @@ header #banner{
 /* Language */
 #language-toggle{
     background-color: var(--main-bg-color);
-    padding: 7px;
+    padding: 10px;
     font-size:var(--font-size-small);
     position:fixed;
     top: 0;
