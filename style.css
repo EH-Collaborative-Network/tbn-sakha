@@ -217,6 +217,7 @@ main{
 }
 #gallery .artist img{
     width: calc(100%);
+    margin-bottom:var(--space);
 }
 
 /****************/
@@ -224,10 +225,14 @@ main{
 /****************/
 .work{
     display: inline-block;
+    width: 100%;
     margin: calc(var(--space) * 2) 0;
 }
 .work img{
   width: 100%;
+}
+.work video{
+    width: 100%;
 }
 .double{
     display: flex;
