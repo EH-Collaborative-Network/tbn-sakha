@@ -231,9 +231,13 @@ main{
 .work img{
   width: 100%;
 }
-.work video{
+.work video, .work iframe{
     width: 100%;
 }
+.work > div{
+    margin-bottom: var(--space);
+}
+
 .double{
     display: flex;
 }
@@ -243,6 +247,8 @@ main{
 .double .work{
     width: calc(50% - var(--space));
 }
+
+
 
 #next-artist{
     margin-left: var(--left-column);
