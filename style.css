@@ -326,6 +326,10 @@ footer h4{
     top: -4px;
     left: -168px;
 }
+footer div p{
+    padding-top:14px;
+    padding-right:15px;
+}
 #back-to-home{
     height: 150px;
 }
