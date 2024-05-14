@@ -9,7 +9,7 @@ document.querySelector("footer").addEventListener("click", function(){
 
 /* background video */
 function resizeBG(){
-    console.log('fire')
+
    let hpvideo = document.querySelector("#hp-video");
     if( hpvideo ) {
 
