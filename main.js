@@ -7,6 +7,28 @@ document.querySelector("footer").addEventListener("click", function(){
 })
 
 
+/* background video */
+let hpvideo = document.querySelector("#hp-video");
+if( hpvideo ) {
+
+    /* 1080 1920 1.7 check ratio */
+    let ww = window.innerWidth;
+    let wh = window.innerHeight;
+
+
+    if(window.innerWidth > window.innerHeight){
+        if((wh * 1.7) < ww){
+            hpvideo.style.height = (ww * 0.5625) + 'px';
+
+        }
+
+    }
+}
+
+
+
+
+
 /* P5 Texture */
 
 
