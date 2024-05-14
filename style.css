@@ -248,7 +248,23 @@ main{
     width: calc(50% - var(--space));
 }
 
-
+.double.hierarchy .work:first-child {
+    width: calc(41.3% - var(--space));
+}
+.double.hierarchy .work:nth-child(2) {
+    width: calc(60% - var(--space));
+}
+.double.hierarchy2 .work:first-child {
+    width: calc(38.3% - var(--space));
+}
+.double.hierarchy2 .work:nth-child(2) {
+    width: calc(60% - var(--space));
+}
+.work audio{
+    width: 100%;
+    display:block;
+    margin-bottom: var(--space);
+}
 
 #next-artist{
     margin-left: var(--left-column);
@@ -336,4 +352,8 @@ footer div p{
 header #intro{
     margin-top: 80px;
 }
+}
+
+.work a{
+  color:white;
 }
