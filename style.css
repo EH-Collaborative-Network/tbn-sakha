@@ -126,6 +126,9 @@ header #intro{
     padding-right:50px;
     
 }
+#hp-intro{
+    font-size: var(--font-size-large);
+}
 header #intro p{
     max-width: 800px;
     text-align: justify;
@@ -143,17 +146,18 @@ footer{
     background-color: black;
     z-index: 9;
 }
+
 footer.on{
     width: 100vw;
 }
 
 footer h4{
     cursor: pointer;
-    transform-origin: top right;
-    position:absolute;
-    transform: rotate(-90deg);
+    /* transform-origin: top right;
+    position:absolute; */
+    /* transform: rotate(-90deg);
     top: -16px;
-    left: -200px;
+    left: -200px; */
 }
 footer div{
     transition:0;
