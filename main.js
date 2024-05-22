@@ -145,3 +145,39 @@ function setup() {
 
   
   
+/* LANGUAGE TOGGLE * */
+
+let langButton = document.querySelector("#language-toggle");
+
+document.addEventListener("DOMContentLoaded", function(){
+	const lang = localStorage.getItem('lang');
+	
+	if(lang == "русский"){
+        langButton.innerHTML = "Switch to English"
+        langButton.classList.add("eng")
+        document.body.classList.add("russian")
+        document.body.classList.remove("english")
+	}else{
+        langButton.innerHTML = "переключиться на русский"
+        langButton.classList.remove("eng")
+        document.body.classList.add("english")
+        document.body.classList.remove("russian")
+    }
+	
+});
+
+langButton.addEventListener("click",function(){
+    if(this.innerHTML == "переключиться на русский"){
+        localStorage.setItem('lang', "русский");
+        langButton.innerHTML = "Switch to English"
+        langButton.classList.add("eng")
+        document.body.classList.add("russian")
+        document.body.classList.remove("english")
+    }else{
+        localStorage.setItem('lang', "English");
+        langButton.innerHTML = "переключиться на русский"
+        langButton.classList.remove("eng")
+        document.body.classList.add("english")
+        document.body.classList.remove("russian")
+    }
+})
