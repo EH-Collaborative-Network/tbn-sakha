@@ -155,6 +155,7 @@ header #intro #hp-intro{
 }
 header #intro h1{
     text-align:left;
+    max-width: 800px;
 }
 #curatorial-statement p{
     line-height: 1.5;
@@ -278,6 +279,9 @@ main{
     width: 60%;
     
     margin: calc(var(--space) * 4) auto;
+}
+.work span{
+    text-align: left;
 }
 .work img{
   width: 100%;
