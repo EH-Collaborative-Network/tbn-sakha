@@ -11,18 +11,20 @@
     --space: 30px;
     --font-size-small: 16px;
     --font-size-body: 20px;
-    --font-size-large: 40px;
-    --font-size-larger: 64px;
-    --left-column: 410px;
-    --space-large:87px;
+    --font-size-large: 30px;
+    --font-size-larger: 54px;
+    --left-column: 305px;
+    --space-large:80px;
     --light-bg-color: rgb(25, 24, 24);
 }
 a:link, a:hover, a:visited{
     color:inherit;
 }
+body p{
+    line-height: 1.4;
+}
 body.english .english{
     display: inherit;
-    line-height:1.2;
     /* letter-spacing: 0.03em; */
 }
 body .russian{
@@ -126,7 +128,7 @@ header #banner{
     padding-bottom:0;
     font-size:var(--font-size-body);
     position:fixed;
-    bottom: calc(var(--space)/2);
+    bottom: calc(var(--space)/2 + 5px);
     right: var(--space);
     z-index: 9;
     cursor: pointer;
@@ -138,8 +140,11 @@ header #intro{
     position: absolute;
     z-index: 2;
     padding-left: var(--left-column);
-    margin-top:80px;
+    margin-top:var(--space-large);
     padding-right:50px;
+    max-height: calc(100vh - ((var(--space-large)*2) + var(--space)));
+    overflow: scroll;
+    padding-bottom: calc(var(--space-large));
     
 }
 #hp-intro{
@@ -147,7 +152,7 @@ header #intro{
 }
 
 header #intro p{
-    max-width: 800px;
+    max-width: 900px;
     text-align: justify;
 }
 header #intro #hp-intro{
@@ -155,10 +160,9 @@ header #intro #hp-intro{
 }
 header #intro h1{
     text-align:left;
-    max-width: 800px;
+    max-width: 900px;
 }
 #curatorial-statement p{
-    line-height: 1.5;
     margin: var(--space-large);
     margin-bottom: calc(var(--space-large) * 2)
 }
@@ -187,13 +191,14 @@ footer{
 footer.on{
     width: 100vw;
     background-color: rgba(0,0,0,1);
-    height: 250px;
+    height: 300px;
+    z-index: 99;
 }
 
 footer h4{
     cursor: pointer;
     margin:0;
-    margin-left: calc(var(--space) + 10px);
+    margin-left: calc(var(--space) + 5px);
     padding:10px 5px;
     padding-right: 40px;
 
@@ -203,6 +208,7 @@ footer h4{
     top: -16px;
     left: -200px; */
 }
+
 footer div{
     transition:0;
     opacity: 0;
@@ -279,6 +285,18 @@ main{
     width: 60%;
     
     margin: calc(var(--space) * 4) auto;
+}
+.double .work.exception{
+    flex-basis: 30%;
+}
+.work.horizontal{
+    width: 100%;
+}
+.work.exception{
+    width: 30%;
+}
+.work.medium-horizontal{
+    width: 80%;
 }
 .work span{
     text-align: left;
@@ -370,37 +388,84 @@ main{
 
 
 /* MOBILE */
-@media(max-width: 900px) {
+@media(max-width: 1105px) {
     
 :root{
     --space: 10px;
     --font-size-body: 17px;
     --font-size-large: 22px;
     --font-size-larger: 30px;
-    --left-column: 20%;
+    --left-column: 43px;
     --space-large:43px;
 }
-
+body, header #intro p{
+    text-align:left;
+}
+header #intro{
+    max-height: calc(100vh - ((var(--space-large)*3) + var(--space)));
+    padding-bottom: calc(var(--space-large * 2))
+}
 #gallery .artist{
-    flex-basis:calc(50% - (var(--space) + 10px));
+    flex-basis:100%;
+    margin-right:0;
+    margin-bottom: var(--space-large)
+
 }
 #gallery .artist:nth-child(3n){
-    margin-right:calc(var(--space) * 2);
+    margin-right:0;
 }
 #gallery .artist:nth-child(2n){
     margin-right:0;
 }
 
 
+
 #back-to-home{
     height: 150px;
 }
-header #intro{
-    margin-top: 80px;
+
+#curatorial-statement p{
+    margin: var(--space) 0;
+    margin-bottom: calc(var(--space-large) * 2)
+}
+#curatorial-statement .sig{
+    margin-top:var(--space-large);
+    display: block;
+}
+
+#language-toggle{
+    right:auto;
+    left:var(--space);
+}
+footer{
+    height: calc(var(--space-large) * 1.6);
+}
+
+
+.double{
+    display: flex;
+    flex-direction: column;
+}
+.double .work:first-child{
+    margin-right: 0;
+}
+.double .work{
+    display: block;
+    width: 100%;
+}
+.double .work.exception{
+    width: 100%;
+    flex-basis: auto;
+}
+.work.medium-horizontal{
+    width: 100%;
+}
+.work{
+    width: 100%;
+}
+.work.exception{
+    width: 80%;
 }
 
 }
 
-.work a{
-  color:white;
-}
