@@ -181,3 +181,18 @@ langButton.addEventListener("click",function(){
         document.body.classList.remove("russian")
     }
 })
+/*LIGHTBOX */
+let imgs = document.querySelectorAll(".work img");
+let lb = document.querySelector('#lightbox');
+imgs.forEach((el) => {
+    el.addEventListener("click",function(){
+        lb.innerHTML = ""
+        let newEl = this.cloneNode(true)
+        lb.appendChild(newEl)
+        lb.classList.add('on')
+    })
+})
+lb.addEventListener("click", function(){
+    this.classList.remove("on")
+    this.innerHTML = ""
+})
