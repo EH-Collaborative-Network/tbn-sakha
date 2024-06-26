@@ -28,6 +28,7 @@ body.english .english{
     /* letter-spacing: 0.03em; */
 }
 body .russian{
+    display: none;
   font-optical-sizing: auto;
 }
 body.english .russian{
