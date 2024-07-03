@@ -11,6 +11,7 @@
     --space: 30px;
     --font-size-small: 16px;
     --font-size-body: 20px;
+    --font-size-body-larger: 27px;
     --font-size-large: 30px;
     --font-size-larger: 54px;
     --left-column: 305px;
@@ -152,7 +153,10 @@ header #intro{
     font-size: var(--font-size-large);
 }
 #hp-intro em{
-    font-size: 27px;
+    font-size: var(--font-size-body-larger);
+}
+#hp-intro a{
+    font-size: var(--font-size-body-larger);
 }
 header #intro p{
     max-width: 900px;
