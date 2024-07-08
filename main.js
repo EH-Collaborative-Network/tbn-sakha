@@ -144,7 +144,11 @@ function setup() {
 
 
   
-  
+/* jump scroll */
+let jump = document.querySelector(".main-up");
+jump.addEventListener('click',function(){
+    window.scrollTo({left:0, top: window.outerHeight - 100,  behavior: 'smooth'});
+})
 /* LANGUAGE TOGGLE * */
 
 let langButton = document.querySelector("#language-toggle");
