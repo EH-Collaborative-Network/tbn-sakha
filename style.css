@@ -535,13 +535,15 @@ main{
         padding: var(--space);
         margin:0 auto;
         position: relative;
-        margin-bottom: var(--space);
+        margin-bottom: calc(var(--space-large)*2);
         display: block;
+        left:0;
+        top:0;
     }
 
     main{
         padding-top:0;
-        margin-top: calc(100vh - 45px);
+        margin-top: calc(100vh - 108px);
     }
 
     footer h4{
