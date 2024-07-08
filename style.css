@@ -10,10 +10,10 @@
     --color:white;
     --space: 30px;
     --font-size-small: 16px;
-    --font-size-body: 20px;
-    --font-size-body-larger: 27px;
+    --font-size-body: 18px;
+    --font-size-body-larger: 24px;
     --font-size-large: 30px;
-    --font-size-larger: 54px;
+    --font-size-larger: 50px;
     --left-column: 305px;
     --space-large:80px;
     --light-bg-color: rgb(25, 24, 24);
@@ -142,7 +142,6 @@ header #intro{
     position: absolute;
     z-index: 2;
     padding-left: var(--left-column);
-    margin-top:var(--space-large);
     padding-right:50px;
     max-height: calc(100vh - ((var(--space-large)*2) + var(--space)));
     overflow: scroll;
@@ -151,12 +150,19 @@ header #intro{
 }
 #hp-intro{
     font-size: var(--font-size-large);
+    margin-top:0;
 }
 #hp-intro em{
     font-size: var(--font-size-body-larger);
+    display: inline-block;
+    margin: 10px 0;
 }
 #hp-intro a{
     font-size: var(--font-size-body-larger);
+}
+#hp-intro span{
+    margin: 15px 0;
+    display: inline-block;
 }
 header #intro p{
     max-width: 900px;
@@ -167,10 +173,12 @@ header #intro #hp-intro{
 }
 header #intro h1{
     text-align:left;
+    margin:0;
     max-width: 900px;
 }
 #curatorial-statement p{
     margin: var(--space-large);
+    white-space: normal;
     margin-bottom: calc(var(--space-large) * 2)
 }
 #curatorial-statement .sig{
@@ -433,6 +441,7 @@ main{
         --font-size-body: 17px;
         --font-size-large: 22px;
         --font-size-larger: 30px;
+        --font-size-body-larger: 20px;
         --left-column: 43px;
         --space-large:43px;
     }
@@ -497,6 +506,9 @@ main{
     }
     .work.medium-horizontal{
         width: 100%;
+    }
+    .dt{
+        display: none;
     }
     .work{
         width: 100%;
