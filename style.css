@@ -460,10 +460,13 @@ main{
     }
     body, header #intro p{
         text-align:left;
+
+    }
+    header #intro p{
+margin-bottom: var(--space-large)
     }
     header #intro{
         max-height: calc(100vh - ((var(--space-large)*3) + var(--space)));
-        padding-bottom: calc(var(--space-large * 2));
         margin-top:var(--space-large);
     }
     #gallery .artist{
@@ -575,6 +578,11 @@ main{
         height: 300px;
         z-index: 99;
         right:0;
+    }
+
+
+    .double.hierarchy .work:first-child, .double.hierarchy .work:nth-child(2), .double.hierarchy2 .work:first-child, .double.hierarchy2 .work:nth-child(2){
+        width: auto;
     }
 }
 
