@@ -446,6 +446,9 @@ main{
 .poem{
     text-align: center;
 }
+.poem strong{
+    font-size: var(--font-size-body-larger);
+}
 /* MOBILE */
 @media(max-width: 1105px) {
         
@@ -463,7 +466,7 @@ main{
 
     }
     header #intro p{
-margin-bottom: var(--space-large)
+        margin-bottom: var(--space-large);
     }
     header #intro{
         max-height: calc(100vh - ((var(--space-large)*3) + var(--space)));
