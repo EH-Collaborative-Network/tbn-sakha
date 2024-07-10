@@ -345,7 +345,16 @@ main{
 .work > div{
     margin-bottom: var(--space);
 }
-
+.triple{
+    display: flex;
+}
+.triple .work:nth-child(2){
+    margin: calc(var(--space) * 2);
+}
+.triple .work{
+    display: inline-block;
+    width: calc(33% - var(--space));
+}
 .double{
     display: flex;
 }
