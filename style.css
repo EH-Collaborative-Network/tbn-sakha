@@ -272,7 +272,10 @@ main{
     display: flex;
     flex-wrap: wrap;    
 }
-
+.description{
+    max-width: 1000px;
+    margin: 0 auto;
+}
 #gallery .artist{
     display: flex;
     margin-right: calc(var(--space) * 2);
