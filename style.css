@@ -529,6 +529,13 @@ main{
         display: flex;
         flex-direction: column;
     }
+    .triple{
+        flex-direction: column;
+    }
+    .triple .work:nth-child(2), .triple .work:first-child, .triple .work:last-child{
+        flex-basis: 100%;
+        width: auto;
+    }
     .double .work:first-child{
         margin-right: 0;
     }
