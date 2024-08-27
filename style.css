@@ -148,6 +148,11 @@ header #intro{
     padding-bottom: calc(var(--space-large));
     top: 50%;
     transform: translateY(-50%);
+      -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+header #intro::-webkit-scrollbar {
+  display: none;
 }
 #hp-intro{
     font-size: var(--font-size-large);
